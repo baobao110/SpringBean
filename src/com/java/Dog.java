@@ -1,8 +1,7 @@
 package com.java;
 
-public class Book {
-
-    private String name;
+public class Dog {
+    private  String name;
 
     public String getName() {
         return name;

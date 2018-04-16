@@ -9,12 +9,13 @@
         http://www.springframework.org/schema/tx/spring-tx.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-
+    <!--方法1 SpringIOC自动注解-->
     <!--开启注解扫描器，作用是对应包下面的类spring都会自动创建对象，使用时直接添加注解-->
     <context:component-scan base-package="com.java"></context:component-scan>
 
-        <!--xml配置和注解配置混合使用-->
-        <bean id="person" class="com.java.Person"></bean>
-         <bean id="book" class="com.java.Book"></bean>
+        <!--方法2 手动配置xml的方式-->
+         <bean id="book" class="com.java.Book">
+             <property name="name" value="aaaaa"></property>
+         </bean>
 
 </beans>
